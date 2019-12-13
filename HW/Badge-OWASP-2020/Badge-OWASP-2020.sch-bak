@@ -231,4 +231,88 @@ Wire Wire Line
 	1100 6800 1050 6800
 Wire Wire Line
 	1100 7300 1500 7300
+$Comp
+L Transistor_BJT:MMBT3904 Q?
+U 1 1 5DF429DE
+P 5850 6200
+F 0 "Q?" H 6041 6246 50  0000 L CNN
+F 1 "MMBT3904" H 6041 6155 50  0000 L CNN
+F 2 "Package_TO_SOT_SMD:SOT-23" H 6050 6125 50  0001 L CIN
+F 3 "https://www.fairchildsemi.com/datasheets/2N/2N3904.pdf" H 5850 6200 50  0001 L CNN
+	1    5850 6200
+	1    0    0    -1  
+$EndComp
+$Comp
+L Transistor_BJT:MMBT3904 Q?
+U 1 1 5DF42F4A
+P 5850 6800
+F 0 "Q?" H 6041 6846 50  0000 L CNN
+F 1 "MMBT3904" H 6041 6755 50  0000 L CNN
+F 2 "Package_TO_SOT_SMD:SOT-23" H 6050 6725 50  0001 L CIN
+F 3 "https://www.fairchildsemi.com/datasheets/2N/2N3904.pdf" H 5850 6800 50  0001 L CNN
+	1    5850 6800
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:R R?
+U 1 1 5DF43EDC
+P 5250 6200
+F 0 "R?" V 5043 6200 50  0000 C CNN
+F 1 "R" V 5134 6200 50  0000 C CNN
+F 2 "" V 5180 6200 50  0001 C CNN
+F 3 "~" H 5250 6200 50  0001 C CNN
+	1    5250 6200
+	0    1    1    0   
+$EndComp
+$Comp
+L Device:R R?
+U 1 1 5DF44157
+P 5250 6800
+F 0 "R?" V 5043 6800 50  0000 C CNN
+F 1 "R" V 5134 6800 50  0000 C CNN
+F 2 "" V 5180 6800 50  0001 C CNN
+F 3 "~" H 5250 6800 50  0001 C CNN
+	1    5250 6800
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	5650 6200 5400 6200
+Wire Wire Line
+	5650 6800 5400 6800
+Text Label 4800 5900 0    50   ~ 0
+RST
+Text Label 4800 6800 0    50   ~ 0
+RST
+Wire Wire Line
+	5100 6800 5000 6800
+Wire Wire Line
+	5950 6000 5950 5900
+Wire Wire Line
+	5950 5900 4800 5900
+Text Label 4800 6200 0    50   ~ 0
+DTR
+Wire Wire Line
+	5100 6200 5050 6200
+Text Label 4800 7050 0    50   ~ 0
+GPIO0
+Wire Wire Line
+	5950 7000 5950 7050
+Wire Wire Line
+	5950 7050 4800 7050
+Wire Wire Line
+	5950 6600 5950 6550
+Wire Wire Line
+	5950 6550 5050 6550
+Wire Wire Line
+	5050 6550 5050 6200
+Connection ~ 5050 6200
+Wire Wire Line
+	5050 6200 4800 6200
+Wire Wire Line
+	5950 6400 5000 6400
+Wire Wire Line
+	5000 6400 5000 6800
+Connection ~ 5000 6800
+Wire Wire Line
+	5000 6800 4800 6800
 $EndSCHEMATC
