@@ -280,9 +280,9 @@ Wire Wire Line
 Wire Wire Line
 	5650 6800 5400 6800
 Text Label 4800 5900 0    50   ~ 0
-RST
+EN
 Text Label 4800 6800 0    50   ~ 0
-RST
+RTS
 Wire Wire Line
 	5100 6800 5000 6800
 Wire Wire Line
