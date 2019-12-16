@@ -1,14 +1,18 @@
-# Badge OWASP latam México 2020
+# Badge OWASP LATAM México 2020
 
 Una vez mas en el año 2020 nos reunimos para celebrar OWASP Latam México 2020, en Electronic Cats hemos creado un badge electronico para todos los asistentes, bienvenidos a la #badgelive
 
-# Tecnologia
+## Capture The Flag
+
+Unete al reto de Capture The Flag y descubre todo lo que tiene dentro este badge por medio de una herramienta Bluetooth ;)
+
+## Tecnologia
 
 - ESP32 BLE and WIFI
 - Convetidor USB-Serial
 - LED WS2812B Mini
 
-# License
+## License
 
 Electronic Cats invests time and resources providing this open source design, please support Electronic Cats and open-source hardware by purchasing products from Electronic Cats!
 
