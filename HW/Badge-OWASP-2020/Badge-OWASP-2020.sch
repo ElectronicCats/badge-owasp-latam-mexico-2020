@@ -712,22 +712,16 @@ NoConn ~ 5555 2780
 NoConn ~ 5555 2680
 Wire Wire Line
 	10140 2130 10140 1980
-Wire Wire Line
-	10140 2630 10140 2880
 Text Label 10140 2880 1    50   ~ 0
 GPIO2
 Text Label 10140 1980 1    50   ~ 0
 GPIO1
-Wire Wire Line
-	10040 2630 10040 2830
 Wire Wire Line
 	10040 1980 10040 2130
 Text Label 10040 2830 1    50   ~ 0
 SCL
 Text Label 10040 1980 1    50   ~ 0
 SDA
-Wire Wire Line
-	9940 2780 9940 2630
 Wire Wire Line
 	9940 1980 9940 2130
 $Comp
@@ -740,17 +734,6 @@ F 2 "" H 9940 2780 50  0001 C CNN
 F 3 "" H 9940 2780 50  0001 C CNN
 	1    9940 2780
 	1    0    0    -1  
-$EndComp
-$Comp
-L Connector_Generic:Conn_02x03_Odd_Even J1
-U 1 1 5DFE251B
-P 10040 2430
-F 0 "J1" V 10136 2242 50  0000 R CNN
-F 1 "Shitty Add-Ons" V 10045 2242 50  0000 R CNN
-F 2 "Connector_PinHeader_2.54mm:PinHeader_2x03_P2.54mm_Vertical" H 10040 2430 50  0001 C CNN
-F 3 "~" H 10040 2430 50  0001 C CNN
-	1    10040 2430
-	0    -1   -1   0   
 $EndComp
 $Comp
 L power:+3.3V #PWR010
@@ -985,4 +968,23 @@ Wire Wire Line
 Text Label 2865 2000 0    50   ~ 0
 GPIO1
 NoConn ~ 6755 1580
+$Comp
+L Connector_Generic:Conn_02x03_Odd_Even J1
+U 1 1 5DFE251B
+P 10040 2330
+F 0 "J1" V 10136 2142 50  0000 R CNN
+F 1 "Shitty Add-Ons" V 10045 2142 50  0000 R CNN
+F 2 "Connector_PinHeader_2.54mm:PinHeader_2x03_P2.54mm_Vertical" H 10040 2330 50  0001 C CNN
+F 3 "~" H 10040 2330 50  0001 C CNN
+	1    10040 2330
+	0    -1   1    0   
+$EndComp
+Wire Wire Line
+	9940 2630 9940 2780
+Wire Wire Line
+	10040 2630 10040 2830
+Wire Wire Line
+	10140 2630 10140 2880
+Text Notes 9965 850  0    50   ~ 0
+sao1.69bis
 $EndSCHEMATC
