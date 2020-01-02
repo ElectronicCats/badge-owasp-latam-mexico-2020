@@ -1,6 +1,6 @@
 EESchema Schematic File Version 4
 LIBS:Badge-OWASP-2020-cache
-EELAYER 30 0
+EELAYER 29 0
 EELAYER END
 $Descr A4 11693 8268
 encoding utf-8
@@ -22,6 +22,8 @@ F 0 "U2" H 9450 5050 50  0000 C CNN
 F 1 "CH340C" H 9550 4900 50  0000 C CNN
 F 2 "Package_SO:SOIC-16_3.9x9.9mm_P1.27mm" H 9900 5000 50  0001 L CNN
 F 3 "http://www.datasheet5.com/pdf-local-2195953" H 9500 6350 50  0001 C CNN
+F 4 "CH340C" H 0   0   50  0001 C CNN "manf#"
+F 5 "C84681" H 0   0   50  0001 C CNN "lscs#"
 	1    9850 5550
 	1    0    0    -1  
 $EndComp
@@ -64,9 +66,11 @@ L Regulator_Linear:AP1117-15 U3
 U 1 1 5DF31D5F
 P 2400 6920
 F 0 "U3" H 2400 7162 50  0000 C CNN
-F 1 "AP111733" H 2400 7071 50  0000 C CNN
+F 1 "AP1117" H 2400 7071 50  0000 C CNN
 F 2 "Package_TO_SOT_SMD:SOT-223-3_TabPin2" H 2400 7120 50  0001 C CNN
 F 3 "http://www.diodes.com/datasheets/AP1117.pdf" H 2500 6670 50  0001 C CNN
+F 4 "AP1117E33G-13" H 0   0   50  0001 C CNN "manf#"
+F 5 "C108785" H 0   0   50  0001 C CNN "lscs#"
 	1    2400 6920
 	1    0    0    -1  
 $EndComp
@@ -78,6 +82,8 @@ F 0 "C4" H 2965 7266 50  0000 L CNN
 F 1 "4.7uF" H 2965 7175 50  0000 L CNN
 F 2 "Capacitor_SMD:C_0805_2012Metric_Pad1.15x1.40mm_HandSolder" H 2888 7070 50  0001 C CNN
 F 3 "~" H 2850 7220 50  0001 C CNN
+F 4 "C385902" H 0   0   50  0001 C CNN "lscs#"
+F 5 "EMK212BJ475KG-T" H 0   0   50  0001 C CNN "manf#"
 	1    2850 7220
 	1    0    0    -1  
 $EndComp
@@ -89,6 +95,8 @@ F 0 "C5" H 2115 7316 50  0000 L CNN
 F 1 "4.7uF" H 2115 7225 50  0000 L CNN
 F 2 "Capacitor_SMD:C_0805_2012Metric_Pad1.15x1.40mm_HandSolder" H 2038 7120 50  0001 C CNN
 F 3 "~" H 2000 7270 50  0001 C CNN
+F 4 "C385902" H 0   0   50  0001 C CNN "lscs#"
+F 5 "EMK212BJ475KG-T" H 0   0   50  0001 C CNN "manf#"
 	1    2000 7270
 	1    0    0    -1  
 $EndComp
@@ -142,6 +150,8 @@ F 0 "D3" H 1595 6775 50  0000 C CNN
 F 1 "MBR120" H 1540 6845 50  0000 C CNN
 F 2 "Diode_SMD:D_SOD-123F" H 1540 6920 50  0001 C CNN
 F 3 "~" H 1540 6920 50  0001 C CNN
+F 4 "MBR120LSF" H 0   0   50  0001 C CNN "manf#"
+F 5 "C130880" H 1540 6920 50  0001 C CNN "lscs#"
 	1    1540 6920
 	-1   0    0    1   
 $EndComp
@@ -167,6 +177,8 @@ F 0 "Q1" H 5791 6496 50  0000 L CNN
 F 1 "MMBT3904" H 5791 6405 50  0000 L CNN
 F 2 "Package_TO_SOT_SMD:SOT-23" H 5800 6375 50  0001 L CIN
 F 3 "https://www.fairchildsemi.com/datasheets/2N/2N3904.pdf" H 5600 6450 50  0001 L CNN
+F 4 "MMBT3904" H 0   0   50  0001 C CNN "manf#"
+F 5 "C181119" H 0   0   50  0001 C CNN "lscs#"
 	1    5600 6450
 	1    0    0    -1  
 $EndComp
@@ -178,6 +190,8 @@ F 0 "Q3" H 5791 7096 50  0000 L CNN
 F 1 "MMBT3904" H 5791 7005 50  0000 L CNN
 F 2 "Package_TO_SOT_SMD:SOT-23" H 5800 6975 50  0001 L CIN
 F 3 "https://www.fairchildsemi.com/datasheets/2N/2N3904.pdf" H 5600 7050 50  0001 L CNN
+F 4 "MMBT3904" H 0   0   50  0001 C CNN "manf#"
+F 5 "C181119" H 0   0   50  0001 C CNN "lscs#"
 	1    5600 7050
 	1    0    0    -1  
 $EndComp
@@ -189,6 +203,8 @@ F 0 "R5" V 4793 6450 50  0000 C CNN
 F 1 "10K" V 4884 6450 50  0000 C CNN
 F 2 "Resistor_SMD:R_0805_2012Metric_Pad1.15x1.40mm_HandSolder" V 4930 6450 50  0001 C CNN
 F 3 "~" H 5000 6450 50  0001 C CNN
+F 4 "0805W8J0103T5E" H 0   0   50  0001 C CNN "manf#"
+F 5 "C25612" H 0   0   50  0001 C CNN "lscs#"
 	1    5000 6450
 	0    1    1    0   
 $EndComp
@@ -200,6 +216,8 @@ F 0 "R6" V 4793 7050 50  0000 C CNN
 F 1 "10K" V 4884 7050 50  0000 C CNN
 F 2 "Resistor_SMD:R_0805_2012Metric_Pad1.15x1.40mm_HandSolder" V 4930 7050 50  0001 C CNN
 F 3 "~" H 5000 7050 50  0001 C CNN
+F 4 "0805W8J0103T5E" H 0   0   50  0001 C CNN "manf#"
+F 5 "C25612" H 0   0   50  0001 C CNN "lscs#"
 	1    5000 7050
 	0    1    1    0   
 $EndComp
@@ -251,6 +269,8 @@ F 0 "D1" H 1550 2300 50  0000 L CNN
 F 1 "WS2812B" H 1600 2400 50  0000 L CNN
 F 2 "LED_SMD:LED_SK6812MINI_PLCC4_3.5x3.5mm_P1.75mm" H 1450 1700 50  0001 L TNN
 F 3 "https://cdn-shop.adafruit.com/datasheets/WS2812B.pdf" H 1500 1625 50  0001 L TNN
+F 4 "WS2812B-Mini" H 0   0   50  0001 C CNN "manf#"
+F 5 "C114583" H 0   0   50  0001 C CNN "lscs#"
 	1    1400 2000
 	1    0    0    -1  
 $EndComp
@@ -262,6 +282,8 @@ F 0 "D2" H 2600 2500 50  0000 L CNN
 F 1 "WS2812B" H 2600 2300 50  0000 L CNN
 F 2 "LED_SMD:LED_SK6812MINI_PLCC4_3.5x3.5mm_P1.75mm" H 2500 1700 50  0001 L TNN
 F 3 "https://cdn-shop.adafruit.com/datasheets/WS2812B.pdf" H 2550 1625 50  0001 L TNN
+F 4 "WS2812B-Mini" H 0   0   50  0001 C CNN "manf#"
+F 5 "C114583" H 0   0   50  0001 C CNN "lscs#"
 	1    2450 2000
 	1    0    0    -1  
 $EndComp
@@ -273,6 +295,8 @@ F 0 "C3" H 2915 2896 50  0000 L CNN
 F 1 "0.1uF" H 2915 2805 50  0000 L CNN
 F 2 "Capacitor_SMD:C_0805_2012Metric_Pad1.15x1.40mm_HandSolder" H 2838 2700 50  0001 C CNN
 F 3 "~" H 2800 2850 50  0001 C CNN
+F 4 "C376923" H 0   0   50  0001 C CNN "lscs#"
+F 5 "TCC0805X7R104K250DTS" H 0   0   50  0001 C CNN "manf#"
 	1    2800 2850
 	1    0    0    -1  
 $EndComp
@@ -286,6 +310,8 @@ F 0 "J3" H 2130 5142 50  0000 L CNN
 F 1 "I2C" H 2130 5051 50  0000 L CNN
 F 2 "Connector_PinHeader_2.54mm:PinHeader_1x04_P2.54mm_Vertical" H 2050 5150 50  0001 C CNN
 F 3 "~" H 2050 5150 50  0001 C CNN
+F 4 "-" H 0   0   50  0001 C CNN "manf#"
+F 5 "-" H 0   0   50  0001 C CNN "lscs#"
 	1    2050 5150
 	1    0    0    -1  
 $EndComp
@@ -297,6 +323,8 @@ F 0 "R4" V 893 5050 50  0000 C CNN
 F 1 "10K" V 984 5050 50  0000 C CNN
 F 2 "Resistor_SMD:R_0805_2012Metric_Pad1.15x1.40mm_HandSolder" V 1030 5050 50  0001 C CNN
 F 3 "~" H 1100 5050 50  0001 C CNN
+F 4 "0805W8J0103T5E" V 1100 5050 50  0001 C CNN "manf#"
+F 5 "C25612" H 0   0   50  0001 C CNN "lscs#"
 	1    1100 5050
 	-1   0    0    1   
 $EndComp
@@ -310,6 +338,8 @@ F 0 "R3" V 1293 5000 50  0000 C CNN
 F 1 "10K" V 1384 5000 50  0000 C CNN
 F 2 "Resistor_SMD:R_0805_2012Metric_Pad1.15x1.40mm_HandSolder" V 1430 5000 50  0001 C CNN
 F 3 "~" H 1500 5000 50  0001 C CNN
+F 4 "0805W8J0103T5E" H 0   0   50  0001 C CNN "manf#"
+F 5 "C25612" H 0   0   50  0001 C CNN "lscs#"
 	1    1500 5000
 	-1   0    0    1   
 $EndComp
@@ -379,6 +409,8 @@ F 0 "U1" H 6655 4230 50  0000 C CNN
 F 1 "ESP32-WROOM-32" H 6955 4030 50  0000 C CNN
 F 2 "RF_Module:ESP32-WROOM-32" H 6155 1080 50  0001 C CNN
 F 3 "https://www.espressif.com/sites/default/files/documentation/esp32-wroom-32_datasheet_en.pdf" H 5855 2630 50  0001 C CNN
+F 4 "ESP32-WROOM-32" H 0   0   50  0001 C CNN "manf#"
+F 5 "-" H 0   0   50  0001 C CNN "lscs#"
 	1    6155 2580
 	1    0    0    -1  
 $EndComp
@@ -434,6 +466,8 @@ F 0 "F1" V 7753 5200 50  0000 C CNN
 F 1 "Fuse" V 7844 5200 50  0000 C CNN
 F 2 "Fuse:Fuse_1812_4532Metric_Pad1.30x3.40mm_HandSolder" V 7880 5200 50  0001 C CNN
 F 3 "~" H 7950 5200 50  0001 C CNN
+F 4 "JK-MSMD030" H 0   0   50  0001 C CNN "manf#"
+F 5 "C369166" H 0   0   50  0001 C CNN "lscs#"
 	1    7950 5200
 	0    1    1    0   
 $EndComp
@@ -465,6 +499,8 @@ F 0 "J4" H 7457 5867 50  0000 C CNN
 F 1 "USB_B" H 7457 5776 50  0000 C CNN
 F 2 "Connector_USB:USB_Micro-B_Wuerth_629105150521" H 7550 5350 50  0001 C CNN
 F 3 " ~" H 7550 5350 50  0001 C CNN
+F 4 "C319170" H 0   0   50  0001 C CNN "lscs#"
+F 5 "U254-051N-4BH806" H 0   0   50  0001 C CNN "manf#"
 	1    7400 5400
 	1    0    0    -1  
 $EndComp
@@ -528,6 +564,8 @@ F 0 "C2" H 1765 2896 50  0000 L CNN
 F 1 "0.1uF" H 1765 2805 50  0000 L CNN
 F 2 "Capacitor_SMD:C_0805_2012Metric_Pad1.15x1.40mm_HandSolder" H 1688 2700 50  0001 C CNN
 F 3 "~" H 1650 2850 50  0001 C CNN
+F 4 "C376923" H 0   0   50  0001 C CNN "lscs#"
+F 5 "TCC0805X7R104K250DTS" H 0   0   50  0001 C CNN "manf#"
 	1    1650 2850
 	1    0    0    -1  
 $EndComp
@@ -621,6 +659,8 @@ F 0 "C1" H 8185 2566 50  0000 L CNN
 F 1 "0.1uF" H 8185 2475 50  0000 L CNN
 F 2 "Capacitor_SMD:C_0805_2012Metric_Pad1.15x1.40mm_HandSolder" H 8108 2370 50  0001 C CNN
 F 3 "~" H 8070 2520 50  0001 C CNN
+F 4 "C376923" H 0   0   50  0001 C CNN "lscs#"
+F 5 "TCC0805X7R104K250DTS" H 0   0   50  0001 C CNN "manf#"
 	1    8070 2520
 	1    0    0    -1  
 $EndComp
@@ -677,6 +717,8 @@ F 0 "R2" V 6955 2330 50  0000 R CNN
 F 1 "470" V 7055 2280 50  0000 R CNN
 F 2 "Resistor_SMD:R_0805_2012Metric_Pad1.15x1.40mm_HandSolder" V 7135 2280 50  0001 C CNN
 F 3 "~" H 7205 2280 50  0001 C CNN
+F 4 "C119076" H 0   0   50  0001 C CNN "lscs#"
+F 5 "RS-05K471JT" H 0   0   50  0001 C CNN "manf#"
 	1    7205 2280
 	0    1    1    0   
 $EndComp
@@ -765,6 +807,8 @@ F 0 "SW1" H 4605 2265 50  0000 C CNN
 F 1 "RST" H 4605 2174 50  0000 C CNN
 F 2 "Button_Switch_SMD:SW_SPST_TL3342" H 4605 2180 50  0001 C CNN
 F 3 "~" H 4605 2180 50  0001 C CNN
+F 4 "C318893" H 0   0   50  0001 C CNN "lscs#"
+F 5 "TS-1185EC-C-D-B" H 0   0   50  0001 C CNN "manf#"
 	1    4605 1980
 	1    0    0    -1  
 $EndComp
@@ -776,6 +820,8 @@ F 0 "SW2" H 4605 3615 50  0000 C CNN
 F 1 "BOOT" H 4605 3524 50  0000 C CNN
 F 2 "Button_Switch_SMD:SW_SPST_TL3342" H 4605 3530 50  0001 C CNN
 F 3 "~" H 4605 3530 50  0001 C CNN
+F 4 "C318893" H 0   0   50  0001 C CNN "lscs#"
+F 5 "TS-1185EC-C-D-B" H 0   0   50  0001 C CNN "manf#"
 	1    4605 3330
 	1    0    0    -1  
 $EndComp
@@ -823,6 +869,8 @@ F 0 "R1" V 4905 1280 50  0000 R CNN
 F 1 "10K" V 5005 1230 50  0000 R CNN
 F 2 "Resistor_SMD:R_0805_2012Metric_Pad1.15x1.40mm_HandSolder" V 5085 1230 50  0001 C CNN
 F 3 "~" H 5155 1230 50  0001 C CNN
+F 4 "0805W8J0103T5E" H 0   0   50  0001 C CNN "manf#"
+F 5 "C25612" H 0   0   50  0001 C CNN "lscs#"
 	1    5155 1230
 	-1   0    0    1   
 $EndComp
@@ -863,6 +911,8 @@ F 0 "J2" H 5585 5097 50  0000 L CNN
 F 1 "Battery" H 5585 5006 50  0000 L CNN
 F 2 "Connector_PinHeader_2.54mm:PinHeader_1x02_P2.54mm_Vertical" H 5505 5105 50  0001 C CNN
 F 3 "~" H 5505 5105 50  0001 C CNN
+F 4 "-" H 0   0   50  0001 C CNN "manf#"
+F 5 "-" H 0   0   50  0001 C CNN "lscs#"
 	1    5505 5105
 	1    0    0    -1  
 $EndComp
@@ -893,13 +943,15 @@ F 3 "" H 5200 5105 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L Transistor_FET:DMG2301L Q2
+L Badge-OWASP-2020-rescue:DMG2301L-Transistor_FET Q2
 U 1 1 5E039884
 P 1705 6660
 F 0 "Q2" H 1911 6706 50  0000 L CNN
-F 1 "DMG3415U-7" H 1860 6775 50  0000 L CNN
+F 1 "DMG3415U-7" H 1925 6800 50  0000 L CNN
 F 2 "Package_TO_SOT_SMD:SOT-23" H 1905 6585 50  0001 L CIN
 F 3 "https://www.diodes.com/assets/Datasheets/DMG2301L.pdf" H 1705 6660 50  0001 L CNN
+F 4 "DMG3415U-7" H 0   0   50  0001 C CNN "manf#"
+F 5 "C96616" H 0   0   50  0001 C CNN "lscs#"
 	1    1705 6660
 	1    0    0    -1  
 $EndComp
@@ -940,6 +992,8 @@ F 0 "R7" H 1409 7141 50  0000 L CNN
 F 1 "100K" H 1409 7050 50  0000 L CNN
 F 2 "Resistor_SMD:R_0805_2012Metric_Pad1.15x1.40mm_HandSolder" H 1350 7095 50  0001 C CNN
 F 3 "~" H 1350 7095 50  0001 C CNN
+F 4 "C118844" H 0   0   50  0001 C CNN "lscs#"
+F 5 "RS-05K104JT" H 0   0   50  0001 C CNN "manf#"
 	1    1350 7095
 	1    0    0    -1  
 $EndComp
@@ -976,6 +1030,8 @@ F 0 "J1" V 10136 2142 50  0000 R CNN
 F 1 "Shitty Add-Ons" V 10045 2142 50  0000 R CNN
 F 2 "Connector_PinHeader_2.54mm:PinHeader_2x03_P2.54mm_Vertical" H 10040 2330 50  0001 C CNN
 F 3 "~" H 10040 2330 50  0001 C CNN
+F 4 "-" H 0   0   50  0001 C CNN "manf#"
+F 5 "-" H 0   0   50  0001 C CNN "lscs#"
 	1    10040 2330
 	0    -1   1    0   
 $EndComp
