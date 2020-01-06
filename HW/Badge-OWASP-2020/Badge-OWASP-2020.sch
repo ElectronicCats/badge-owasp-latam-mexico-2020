@@ -1,6 +1,6 @@
 EESchema Schematic File Version 4
 LIBS:Badge-OWASP-2020-cache
-EELAYER 29 0
+EELAYER 30 0
 EELAYER END
 $Descr A4 11693 8268
 encoding utf-8
@@ -14,23 +14,10 @@ Comment2 ""
 Comment3 ""
 Comment4 ""
 $EndDescr
-$Comp
-L Badge-OWASP-2020-rescue:CH340C-Interface_USB2 U2
-U 1 1 5DF1A7B6
-P 9850 5550
-F 0 "U2" H 9450 5050 50  0000 C CNN
-F 1 "CH340C" H 9550 4900 50  0000 C CNN
-F 2 "Package_SO:SOIC-16_3.9x9.9mm_P1.27mm" H 9900 5000 50  0001 L CNN
-F 3 "http://www.datasheet5.com/pdf-local-2195953" H 9500 6350 50  0001 C CNN
-F 4 "CH340C" H 0   0   50  0001 C CNN "manf#"
-F 5 "C84681" H 0   0   50  0001 C CNN "lscs#"
-	1    9850 5550
-	1    0    0    -1  
-$EndComp
 Text Label 10250 5150 0    50   ~ 0
-TXD
+TX
 Text Label 10250 5250 0    50   ~ 0
-RXD
+RX
 Text Label 10250 5950 0    50   ~ 0
 RTS
 Text Label 10250 5850 0    50   ~ 0
@@ -1043,4 +1030,19 @@ Wire Wire Line
 	10140 2630 10140 2880
 Text Notes 9965 850  0    50   ~ 0
 sao1.69bis
+NoConn ~ 5555 2580
+$Comp
+L Badge-OWASP-2020-rescue:CH340C-Interface_USB2 U2
+U 1 1 5DF1A7B6
+P 9850 5550
+F 0 "U2" H 9450 5050 50  0000 C CNN
+F 1 "CH340C" H 9550 4900 50  0000 C CNN
+F 2 "Package_SO:SOIC-16_3.9x9.9mm_P1.27mm" H 9900 5000 50  0001 L CNN
+F 3 "http://www.datasheet5.com/pdf-local-2195953" H 9500 6350 50  0001 C CNN
+F 4 "CH340C" H 0   0   50  0001 C CNN "manf#"
+F 5 "C84681" H 0   0   50  0001 C CNN "lscs#"
+	1    9850 5550
+	1    0    0    -1  
+$EndComp
+NoConn ~ 10250 5650
 $EndSCHEMATC
