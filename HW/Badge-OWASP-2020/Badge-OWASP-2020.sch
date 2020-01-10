@@ -1,12 +1,12 @@
 EESchema Schematic File Version 4
 LIBS:Badge-OWASP-2020-cache
-EELAYER 30 0
+EELAYER 29 0
 EELAYER END
 $Descr A4 11693 8268
 encoding utf-8
 Sheet 1 1
 Title "OWASP badge"
-Date "2019-12-11"
+Date "2020-01-09"
 Rev "1.0"
 Comp "Electronic Cats"
 Comment1 "Montserrat Figueroa"
@@ -478,19 +478,6 @@ Wire Wire Line
 	7400 5800 7400 5950
 Wire Wire Line
 	7300 6100 7300 5950
-$Comp
-L Connector:USB_B J4
-U 1 1 5DF2C252
-P 7400 5400
-F 0 "J4" H 7457 5867 50  0000 C CNN
-F 1 "USB_B" H 7457 5776 50  0000 C CNN
-F 2 "Connector_USB:USB_Micro-B_Wuerth_629105150521" H 7550 5350 50  0001 C CNN
-F 3 " ~" H 7550 5350 50  0001 C CNN
-F 4 "C319170" H 0   0   50  0001 C CNN "lscs#"
-F 5 "U254-051N-4BH806" H 0   0   50  0001 C CNN "manf#"
-	1    7400 5400
-	1    0    0    -1  
-$EndComp
 Wire Notes Line
 	6950 6550 6950 4450
 Wire Wire Line
@@ -1045,4 +1032,16 @@ F 5 "C84681" H 0   0   50  0001 C CNN "lscs#"
 	1    0    0    -1  
 $EndComp
 NoConn ~ 10250 5650
+$Comp
+L Connector:USB_B_Micro J4
+U 1 1 5E1CB56D
+P 7400 5400
+F 0 "J4" H 7457 5867 50  0000 C CNN
+F 1 "USB_B_Micro" H 7457 5776 50  0000 C CNN
+F 2 "Connectors:U254051N4BH806" H 7550 5350 50  0001 C CNN
+F 3 "~" H 7550 5350 50  0001 C CNN
+	1    7400 5400
+	1    0    0    -1  
+$EndComp
+NoConn ~ 7700 5600
 $EndSCHEMATC
