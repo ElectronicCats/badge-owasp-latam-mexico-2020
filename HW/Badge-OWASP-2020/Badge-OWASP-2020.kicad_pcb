@@ -2,7 +2,7 @@
 
   (general
     (thickness 1.6)
-    (drawings 2)
+    (drawings 5)
     (tracks 0)
     (zones 0)
     (modules 29)
@@ -11,13 +11,13 @@
 
   (page A4)
   (layers
-    (0 F.Cu signal)
-    (31 B.Cu signal)
+    (0 F.Cu signal hide)
+    (31 B.Cu signal hide)
     (32 B.Adhes user)
     (33 F.Adhes user)
     (34 B.Paste user)
     (35 F.Paste user)
-    (36 B.SilkS user)
+    (36 B.SilkS user hide)
     (37 F.SilkS user hide)
     (38 B.Mask user)
     (39 F.Mask user)
@@ -287,7 +287,7 @@
   )
 
   (module Connector_PinHeader_2.54mm:PinHeader_1x02_P2.54mm_Vertical (layer B.Cu) (tedit 59FED5CC) (tstamp 5E1666B1)
-    (at 149.606 52.324 270)
+    (at 168.148 85.344 270)
     (descr "Through hole straight pin header, 1x02, 2.54mm pitch, single row")
     (tags "Through hole pin header THT 1x02 2.54mm single row")
     (path /5DFEA819)
@@ -326,7 +326,7 @@
     )
   )
 
-  (module Aesthetics:Badge_2020_OWASP (layer F.Cu) (tedit 0) (tstamp 5E1639A4)
+  (module Aesthetics:Badge_2020_OWASP (layer F.Cu) (tedit 0) (tstamp 5E1C2124)
     (at 147.09 65.99)
     (fp_text reference Ref** (at 0 0) (layer F.SilkS) hide
       (effects (font (size 1.27 1.27) (thickness 0.15)))
@@ -4389,7 +4389,7 @@
   )
 
   (module Package_SO:SOIC-16_3.9x9.9mm_P1.27mm (layer B.Cu) (tedit 5C97300E) (tstamp 5DFD656A)
-    (at 157.734 77.724 90)
+    (at 158.75 78.74 90)
     (descr "SOIC, 16 Pin (JEDEC MS-012AC, https://www.analog.com/media/en/package-pcb-resources/package/pkg_pdf/soic_narrow-r/r_16.pdf), generated with kicad-footprint-generator ipc_gullwing_generator.py")
     (tags "SOIC SO")
     (path /5DF1A7B6)
@@ -4630,7 +4630,7 @@
   )
 
   (module Button_Switch_SMD:SW_SPST_TL3342 (layer F.Cu) (tedit 5A02FC95) (tstamp 5DFD64D9)
-    (at 121.514 47.62)
+    (at 146.66 64.394)
     (descr "Low-profile SMD Tactile Switch, https://www.e-switch.com/system/asset/product_line/data_sheet/165/TL3342.pdf")
     (tags "SPST Tactile Switch")
     (path /5E03662D)
@@ -4705,7 +4705,7 @@
   )
 
   (module Button_Switch_SMD:SW_SPST_TL3342 (layer F.Cu) (tedit 5A02FC95) (tstamp 5DFD64A3)
-    (at 121.564 54.996)
+    (at 157.124 64.394)
     (descr "Low-profile SMD Tactile Switch, https://www.e-switch.com/system/asset/product_line/data_sheet/165/TL3342.pdf")
     (tags "SPST Tactile Switch")
     (path /5E035F76)
@@ -4780,7 +4780,7 @@
   )
 
   (module Resistor_SMD:R_0805_2012Metric_Pad1.15x1.40mm_HandSolder (layer B.Cu) (tedit 5B36C52B) (tstamp 5DFD646D)
-    (at 146.05 80.509 90)
+    (at 149.606 85.081 90)
     (descr "Resistor SMD 0805 (2012 Metric), square (rectangular) end terminal, IPC_7351 nominal with elongated pad for handsoldering. (Body size source: https://docs.google.com/spreadsheets/d/1BsfQQcO9C6DZCsRaXUlFlo91Tg2WpOkGARC1WS5S8t0/edit?usp=sharing), generated with kicad-footprint-generator")
     (tags "resistor handsolder")
     (path /5DF44157)
@@ -4996,7 +4996,7 @@
   )
 
   (module Package_TO_SOT_SMD:SOT-23 (layer B.Cu) (tedit 5A02FF57) (tstamp 5DFD6407)
-    (at 139.7 80.518 90)
+    (at 143.576 85.106 90)
     (descr "SOT-23, Standard")
     (tags SOT-23)
     (path /5DF42F4A)
@@ -5243,7 +5243,7 @@
   )
 
   (module Fuse:Fuse_1812_4532Metric_Pad1.30x3.40mm_HandSolder (layer B.Cu) (tedit 5B301BBE) (tstamp 5DFD637A)
-    (at 166.37 88.839 90)
+    (at 164.846 90.993 90)
     (descr "Fuse SMD 1812 (4532 Metric), square (rectangular) end terminal, IPC_7351 nominal with elongated pad for handsoldering. (Body size source: https://www.nikhef.nl/pub/departments/mt/projects/detectorR_D/dtddice/ERJ2G.pdf), generated with kicad-footprint-generator")
     (tags "resistor handsolder")
     (path /5DF30928)
@@ -5594,6 +5594,20 @@
     )
   )
 
+  (gr_circle (center 103.124 37.989769) (end 105.156 36.719769) (layer Edge.Cuts) (width 0.05) (tstamp 5E1C31CC))
+  (dimension 4.792462 (width 0.15) (layer Dwgs.User)
+    (gr_text "4.792 mm" (at 198.912 76.343769 270) (layer Dwgs.User)
+      (effects (font (size 1 1) (thickness 0.15)))
+    )
+    (feature1 (pts (xy 191.77 78.74) (xy 198.198421 78.74)))
+    (feature2 (pts (xy 191.77 73.947538) (xy 198.198421 73.947538)))
+    (crossbar (pts (xy 197.612 73.947538) (xy 197.612 78.74)))
+    (arrow1a (pts (xy 197.612 78.74) (xy 197.025579 77.613496)))
+    (arrow1b (pts (xy 197.612 78.74) (xy 198.198421 77.613496)))
+    (arrow2a (pts (xy 197.612 73.947538) (xy 197.025579 75.074042)))
+    (arrow2b (pts (xy 197.612 73.947538) (xy 198.198421 75.074042)))
+  )
+  (gr_circle (center 191.77 76.343769) (end 193.802 75.073769) (layer Edge.Cuts) (width 0.05))
   (dimension 99.080164 (width 0.15) (layer Margin)
     (gr_text "99.080 mm" (at 148.26013 123.912709 0.1040899169) (layer Margin)
       (effects (font (size 1 1) (thickness 0.15)))
