@@ -1,21 +1,17 @@
-/*********************************************************************
+/********************************************************************
 This is an example for our Monochrome OLEDs based on SSD1306 drivers
-
   Pick one up today in the adafruit shop!
   ------> http://www.adafruit.com/category/63_98
-
 This example is for a 64x48 size display using I2C to communicate
 3 pins are required to interface (2 I2C and one reset)
-
 Adafruit invests time and resources providing this open source code,
 please support Adafruit and open-source hardware by purchasing
 products from Adafruit!
-
 Written by Limor Fried/Ladyada  for Adafruit Industries.
 BSD license, check license.txt for more information
 All text above, and the splash screen must be included in any redistribution
 *********************************************************************/
-//#define OLED
+#define OLED
 
 #ifdef OLED
 #include <SPI.h>
@@ -24,6 +20,10 @@ All text above, and the splash screen must be included in any redistribution
 #include <Adafruit_SSD1306.h>
 #endif
 #include <Adafruit_NeoPixel.h>
+
+#define SCREEN_WIDTH 128 // OLED display width, in pixels
+#define SCREEN_HEIGHT 32 // OLED display height, in pixels
+
 
 #define PIN 15
 
@@ -41,8 +41,8 @@ Adafruit_NeoPixel strip(NUMPIXELS, PIN, NEO_GRB + NEO_KHZ800);
 #ifdef OLED
 // SCL GPIO5
 // SDA GPIO4
-#define OLED_RESET 0  // GPIO0
-Adafruit_SSD1306 display(OLED_RESET);
+#define OLED_RESET -1  // GPIO0
+Adafruit_SSD1306 display(SCREEN_WIDTH, SCREEN_HEIGHT, &Wire, OLED_RESET);
 
 #define NUMFLAKES 10
 #define XPOS 0
@@ -70,9 +70,6 @@ static const unsigned char PROGMEM logo16_glcd_bmp[] =
   B01110000, B01110000,
   B00000000, B00110000 };
 
-#if (SSD1306_LCDHEIGHT != 64)
-#error("Height incorrect, please fix Adafruit_SSD1306.h!");
-#endif
 
 #endif
 void setup()   {
