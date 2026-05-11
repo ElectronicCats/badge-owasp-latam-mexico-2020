@@ -35,28 +35,23 @@ WiFiServer server(80);
 IPAddress IP = IPAddress(10,20,1,2);
 IPAddress MSK = IPAddress(255,255,255,0);
 IPAddress GW = IPAddress(10,20,1,1);
-int flagWifi = -1;  //Wifi deshabilitado
+int flagWifi = 0;  //Wifi deshabilitado
 
 // Simbolo hacker
-#define LOGO_HEIGHT 16
-#define LOGO_WIDTH 24
 static const unsigned char PROGMEM logo[] = {
-  0b00000000,0b00111100,0b00000000,
-  0b00000000,0b01111110,0b00000000,
-  0b00000000,0b11111111,0b00000000,
-  0b00000000,0b01111110,0b00000000,
-  0b00000000,0b00111100,0b00000000,
-  0b00000000,0b00000000,0b00111100,
-  0b00000000,0b00000000,0b01111110,
-  0b00000000,0b00000000,0b11111111,
-  0b00000000,0b00000000,0b01111110,
-  0b00000000,0b00000000,0b00111100,
-  0b00111100,0b00111100,0b00111100,
-  0b01111110,0b01111110,0b01111110,
-  0b11111111,0b11111111,0b11111111,
-  0b01111110,0b01111100,0b01111110,
-  0b00111100,0b00111100,0b00111100,
-  0b00000000,0b00000000,0b00000000
+0x00,0x00,0x00,0x00,0x00,0x00,0x00,0x00,0x1f,0xff,
+0xff,0xfc,0x20,0x00,0x00,0x00,0x20,0x03,0xe0,0x00,
+0x20,0x07,0xf0,0x00,0x20,0x07,0xf0,0x00,0x20,0x07,
+0xf0,0x00,0x20,0x07,0xf0,0x00,0x20,0x07,0xe0,0x00,
+0x20,0x01,0xc0,0x00,0x20,0x00,0x00,0x00,0x20,0x00,
+0x00,0x00,0x20,0x00,0x01,0xf0,0x20,0x00,0x01,0xf8,
+0x20,0x00,0x03,0xf8,0x20,0x00,0x03,0xf8,0x20,0x00,
+0x03,0xf8,0x20,0x00,0x01,0xf8,0x20,0x00,0x00,0xf0,
+0x20,0x00,0x00,0x00,0x20,0x00,0x00,0x00,0x27,0x81,
+0xc0,0xf0,0x2f,0xc7,0xe1,0xf8,0x2f,0xe7,0xf3,0xf8,
+0x2f,0xe7,0xf3,0xf8,0x2f,0xe7,0xf3,0xf8,0x2f,0xc7,
+0xf3,0xf8,0x27,0xc3,0xe1,0xf0,0x20,0x00,0x00,0x00,
+0x00,0x00,0x00,0x00,0x00,0x00,0x00,0x00
 };
 
 // Imagen OWASP Riviera Maya en base64
@@ -159,7 +154,7 @@ void setup() {
 
   // Iniciando OLED
   if(!display.begin(SSD1306_SWITCHCAPVCC, SCREEN_ADDRESS)){
-    //Serial.println(F("SSD1306 allocation failed"));
+    Serial.println(F("SSD1306 allocation failed"));
     pantalla = false;
   }else{
     intro();
@@ -380,17 +375,17 @@ bool stageFinal(String url){
 }
 
 void pantallaOLED(String msg, int sizef, boolean scroll ){
+  display.stopscroll();          // detener siempre primero
   display.clearDisplay();
   display.setTextSize(sizef);
   display.setTextColor(SSD1306_WHITE);
   display.setCursor(0,0);
   display.println(msg);
-  if(scroll){
-    display.startscrollleft(0x00, 0x07);
-  }else {
-    display.stopscroll();
-  }
   display.display();
+
+  if(scroll){
+    display.startscrollleft(0x00, 0x03);
+  }
 }
 
 void correcto(boolean f) {  
@@ -423,14 +418,13 @@ void correcto(boolean f) {
 void introSerial(){
   Serial.println(F("\n\n##############################"));
   Serial.println(F("# SHALL WE PLAY TO BE HACKER #"));
-  Serial.println(F("#  by Darkwolf               #"));
+  Serial.println(F("#  by Darkwolf und Glitchboi #"));
   Serial.println(F("##############################\n"));
 }
 
 void intro(void){
   display.clearDisplay();
-
-  display.drawBitmap((display.width() - LOGO_WIDTH)/2, (display.height() - LOGO_HEIGHT)/2, logo, LOGO_WIDTH, LOGO_HEIGHT, 1);
+  display.drawBitmap(48,0,logo,32,32, 1);
   display.display();
   delay(3000);
 }
