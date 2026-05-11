@@ -28,7 +28,7 @@ Adafruit_NeoPixel pixels(NUMPIXELS, PIN, NEO_GRB + NEO_KHZ800);
 Adafruit_SSD1306 display(SCREEN_WIDTH, SCREEN_HEIGHT, &Wire, OLED_RESET);
 
 // Datos de configuracion del AP
-const char *ssid = "Glitchboi in the house";
+const char *ssid = "Wifi CTF";
 const char *password = "yx67SnMw";
 WiFiServer server(80);
 
